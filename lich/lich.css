@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: wheat;
+}
+
+.lich-container {
+  width: 350px;
+  background: #1e3a8a;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.lich-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lich-current-date {
+  font-size: 18px;
+  font-weight: 600;
+  color: pink;
+}
+
+.lich-navigation span {
+  padding: 5px 10px;
+  margin-left: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  cursor: pointer;
+  color: pink;
+}
+
+.lich-navigation span:hover {
+  background: wheat;
+}
+
+.lich-body ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  color: pink;
+}
+
+.lich-body li {
+  width: calc(100% / 7);
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.lich-weekdays li {
+  font-weight: 600;
+}
+
+.lich-dates li {
+  cursor: pointer;
+}
+
+.lich-dates li:hover {
+  background: pink;
+  border-radius: 5px;
+}
+
+.lich-dates li.active {
+  background: wheat;
+  color: #1e3a8a;
+  border-radius: 5px;
+}
